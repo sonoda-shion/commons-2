@@ -1,0 +1,93 @@
+/* 
+///// COLORS /////
+*/
+:root {
+  --body-color: ;
+  --white-color: ;
+  --first-color: ;
+  --first-color-second: ;
+  --first-color-alt: ;
+  --title-color: ;
+  --text-color: ;
+  --text-color-light: ;
+  --input-color-light: ;
+  --border-color: ;
+  --scroll-bar--color: ;
+  --scroll-thumb--color: ;
+}
+/* 
+///// FONT SIZES /////
+*/
+:root {
+  --body-font: ;
+  --title-font: ;
+  --biggest-font-size: ;
+  --h1-font-size: ;
+  --h2-font-size: ;
+  --h3-font-size: ;
+  --normal-font-size: ;
+  --small-font-size: ;
+  --smaller-font-size: ;
+}
+/* 
+///// FONT WEIGHT /////
+*/
+:root {
+  --font-medium: ;
+  --font-semi-bold: ;
+}
+/* 
+///// MARGIN BOTTOM /////
+*/
+:root {
+  --mb-0-25: ;
+  --mb-0-5: ;
+  --mb-0-75: ;
+  --mb-1: ;
+  --mb-1-25: ;
+  --mb-1-5: ;
+  --mb-2: ;
+  --mb-2-5: ;
+}
+/* 
+///// TRANSITION /////
+*/
+:root {
+  --transition: all 0.3s linear;
+}
+/* 
+///// BASE /////
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-font);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--title-font);
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+/* ///// MAIN CSS ///// */
