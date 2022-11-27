@@ -1556,6 +1556,15 @@ section .title {
   margin-top: 20px;
 }
 
+.click-1,
+.click-2,
+.click-3,
+.click-4,
+.click-5,
+.click-6 {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 320px) {
   .q-items .item {
     width: 280px;
