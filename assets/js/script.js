@@ -76,7 +76,7 @@ $(function() {
 	  		$('body').removeClass('open');
 		}
     // 移動先を50px上にずらす
-    var adjust = 80;
+    var adjust = 110;
     // スクロールの速度
     var speed = 400; // ミリ秒
     // アンカーの値取得
