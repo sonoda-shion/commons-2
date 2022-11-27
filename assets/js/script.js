@@ -68,7 +68,7 @@ ScrollReveal().reveal('.reveal', {
 
 // a tag jump
 let windowWidth = $(window).width();
-let pcWidth = 768;
+let pcWidth = 904;
 
 // moveTop
 $(function() {
