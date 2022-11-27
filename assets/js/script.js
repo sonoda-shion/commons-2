@@ -21,10 +21,8 @@ jQuery(function($) {
       var value = $(this).scrollTop();
       if ( value > navPos + 80 ) {
         $nav.addClass(fixedClass);
-        $contactBtn.addClass(fixedClass);
       } else {
         $nav.removeClass(fixedClass);
-        $contactBtn.removeClass(fixedClass);
       }
     });
 });
