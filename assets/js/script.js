@@ -65,3 +65,31 @@ ScrollReveal().reveal('.reveal', {
     distance: '50px',  
 });
 
+
+// a tag jump
+let windowWidth = $(window).width();
+let pcWidth = 768;
+
+// moveTop
+$(function() {
+	$('a[href^="#"]').click(function(){
+		if(windowWidth <= pcWidth) {
+			$("#js-nav").removeClass("show");
+	  		$('body').removeClass('open');
+		}
+    // 移動先を50px上にずらす
+    var adjust = 80;
+    // スクロールの速度
+    var speed = 400; // ミリ秒
+    // アンカーの値取得
+    var href= $(this).attr("href");
+    // 移動先を取得
+    var target = $(href == "#" || href == "" ? 'html' : href);
+		console.log(target);
+    // 移動先を調整
+    var position = target.offset().top - adjust;
+    // スムーススクロール
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+});
