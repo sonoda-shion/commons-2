@@ -251,10 +251,29 @@ img {
     text-align: center;
     padding: 10px 0;
     margin-right: 0;
+    border-radius: 30px;
   }
 
   .header-inner .icons {
     display: none;
+  }
+
+  .nav-lists a {
+    position: relative;
+  }
+
+  .nav-lists a li::before {
+    width: 0%;
+    height: 3px;
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    background-color: var(--first-color);
+    transition: all 0.4s;
+  }
+
+  .nav-lists a li:hover::before {
+    width: 100%;
   }
 }
 
@@ -262,6 +281,24 @@ img {
   .header-inner .nav-lists a {
     margin-right: 40px;
   }
+}
+
+@keyframes contactAnimation {
+  0% {
+    color: #fff;
+    background-color: var(--first-color);
+  }
+  100% {
+    color: var(--first-color);
+    background-color: #fff;
+    border: 2px solid var(--first-color);
+  }
+}
+
+.contact-btn:hover {
+  animation-name: contactAnimation;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
 }
 
 /* TOPVIDUAL */
