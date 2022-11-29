@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit&display=swap");
 /* 
 ///// COLORS /////
 */
@@ -80,6 +80,12 @@ img {
   width: 100%;
   display: block;
   transition: all 0.3s;
+}
+
+@media screen and (min-width: 710px) {
+  br {
+    display: none;
+  }
 }
 
 /* ///// MAIN CSS ///// */
@@ -466,7 +472,6 @@ section {
 
 section .title {
   text-align: center;
-  white-space: pre-line;
   line-height: 30px;
   margin-bottom: 30px;
 }
@@ -838,7 +843,7 @@ section .title {
   width: 80%;
   min-width: 320px;
   margin: 0 auto;
-  padding: 50px 30px;
+  padding: 30px;
   position: relative;
 }
 
@@ -847,6 +852,7 @@ section .title {
   justify-content: center;
   text-align: start;
   color: var(--first-color-second);
+  margin-bottom: 20px;
 }
 
 .contact-inner .title span {
@@ -855,13 +861,13 @@ section .title {
 
 .contact-inner .line {
   width: 3px;
-  margin: 30px auto 0 auto;
+  margin: 20px auto 0 auto;
 }
 
 @media screen and (max-width: 320px) {
   .contact-inner {
     min-width: 290px;
-    padding: 50px 20px;
+    padding: 30px 20px;
   }
 }
 
@@ -883,6 +889,14 @@ section .title {
     transform: rotate(90deg);
     top: 85px;
     right: 5vw;
+  }
+
+  .contact-inner .title {
+    margin-bottom: 30px;
+  }
+
+  .contact-inner {
+    padding: 60px 30px;
   }
 }
 /* FEATURES */
@@ -1142,7 +1156,7 @@ section .title {
 
 .com-inner .right-item .click-btn {
   margin: 0 auto;
-  transform: translateY(-97px);
+  transform: translateY(-97px) rotate(90deg);
 }
 
 .com-inner .left-item .item-title {
