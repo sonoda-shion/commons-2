@@ -301,10 +301,14 @@ img {
   }
 }
 
-.contact-btn:hover {
+.color-btn:hover {
   animation-name: contactAnimation;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
+}
+
+.color-btn {
+  transition: all 0.3;
 }
 
 /* TOPVIDUAL */
